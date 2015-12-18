@@ -1,0 +1,11 @@
+Mat img = imread("filename.jpg",CV_LOAD_IMAGE_COLOR);
+unsigned char *input = (unsigned char*)(img.data);
+
+int i,j,r,g,b;
+for(int i = 0;i < img.cols;i++){
+    for(int j = 0;j < img.rows;j++){
+        b = input[img.cols * j + i ] ;
+        g = input[img.cols * j + i + 1];
+        r = input[img.cols * j + i + 2];
+        }
+  }
